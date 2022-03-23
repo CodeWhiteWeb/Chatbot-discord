@@ -52,4 +52,7 @@ client.login(process.env.token);
 
 ## Support Server
 
-~ [_Chatari's Secret Hallway_](https://discord.gg/fZP4c9pREh)
+- [_Chatari's Secret Hallway_](https://discord.gg/fZP4c9pREh)
+
+
+<h6 align="center">Source Code will be uploaded soon</h6>
