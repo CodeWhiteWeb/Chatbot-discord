@@ -35,6 +35,7 @@ let msg = message.content
 //setup chat
 const chat = new Chat({
     user: uid
+    name: "Chatari"//name of bot
 });
 
 //main chat
@@ -46,13 +47,10 @@ chat.chat(msg).then(reply => {
 client.login(process.env.token);
 ```
 
-## Information
-
+## Updates and Info
+- Updated Chatbot Wrapper from Production link to [New Link](https://chatbot-api.vercel.app/) And its public now!
 - If any bugs found, please report it in the **Discord Server**.
 
 ## Support Server
 
-- [_Chatari's Secret Hallway_](https://discord.gg/fZP4c9pREh)
-
-
-<h6 align="center">Source Code will be uploaded soon</h6>
+~ [_Chatari's Secret Hallway_](https://discord.gg/fZP4c9pREh)
