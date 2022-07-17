@@ -1,37 +1,56 @@
-## Welcome to GitHub Pages
+# chatbot-Discord
 
-You can use the [editor on GitHub](https://github.com/CodeWhiteWeb/Chatbot-discord/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+![F4pEry6](https://nodei.co/npm/chatbot-discord.png?downloads=true&stars=true)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+<a href="https://www.npmjs.com/package/chatbot-discord">
+<img src="https://img.shields.io/npm/dt/chatbot-discord?color=CC3534&logo=npm&style=for-the-badge" alt="Downloads">
+</a>
 
-### Markdown
+<a href="https://www.npmjs.com/package/chatbot-discord">
+<img src="https://img.shields.io/npm/v/chatbot-discord?color=red&label=Version&logo=npm&style=for-the-badge" alt="Npm version">
+</a>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+- chatbot-discord is a wrapper for chatbot API that you can use to make a chatbot in node.js specifically created for [discord.js](https://discord.js.org/) created by [Code White Web](https://CodeWhiteWeb.cf)
 
-```markdown
-Syntax highlighted code block
+## Installation
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```bash
+npm i chatbot-discord
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Example
 
-### Jekyll Themes
+- Note: This example is for a bot that uses [discord.js v12](https://v12.discordjs.guide/).
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/CodeWhiteWeb/Chatbot-discord/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+```javascript
+// import packages
+const Chat = require("chatbot-discord");
+const Discord = require('discord.js');
+const client = new Discord.Client();
 
-### Support or Contact
+//assign var
+let uid = message.author.id
+let msg = message.content
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+//setup chat
+const chat = new Chat({
+    user: uid
+    name: "Chatari"//name of bot
+});
+
+//main chat
+chat.chat(msg).then(reply => {
+    message.channel.send(reply)
+})
+
+//bot login
+client.login(process.env.token);
+```
+
+## Updates and Info
+- Updated Chatbot Wrapper from Production link to [New Link](https://chatbot-api.vercel.app/) And its public now!
+- If any bugs found, please report it in the **Discord Server**.
+
+## Support Server
+
+~ [_Chatari's Secret Hallway_](https://discord.gg/fZP4c9pREh)
