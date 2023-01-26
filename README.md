@@ -1,5 +1,7 @@
 # chatbot-Discord
 
+> This is a fork of the original project [here](https://github.com/hisroyalty/clever-chat)
+
 ![F4pEry6](https://nodei.co/npm/chatbot-discord.png?downloads=true&stars=true)
 
 <a href="https://www.npmjs.com/package/chatbot-discord">
