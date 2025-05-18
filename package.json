@@ -4,7 +4,7 @@
   "description": "Discord Chatbot Npm package created by CodeWhiteWeb on github",
   "main": "index.js",
   "dependencies": {
-    "@vitalets/google-translate-api": "^8.0.0"
+    "@vitalets/google-translate-api": "^9.2.1"
   },
   "devDependencies": {
     "prettier": "^2.3.2",
