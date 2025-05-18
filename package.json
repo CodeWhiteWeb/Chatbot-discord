@@ -1,5 +1,5 @@
 {
-  "name": "chatbot-discord",
+  "name": "@CodeWhiteWeb/chatbot-discord",
   "version": "1.0.0",
   "description": "Discord Chatbot Npm package created by CodeWhiteWeb on github",
   "main": "index.js",
@@ -19,6 +19,9 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodeWhiteWeb/Chatbot-discord.git"
+  },
+  "publishConfig": {
+  "registry": "https://npm.pkg.github.com/"
   },
   "keywords": [
     "Chatbot",
